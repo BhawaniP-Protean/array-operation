@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    int size;
+    printf("give the size of array");
+    scanf("%d",&size);
+
+
+    int n;
+    printf("upto which size you do the operation");
+    scanf("%d",&n);
+
+    if(n>=size)
+    {
+        printf("take the smaller size ");
+
+    }
+    else
+    {   int arr[size];
+        printf("enter the element\n");
+        for(int i=0; i<n; i++)
+        {
+            printf("arr[%d]",i);
+            scanf("%d",&arr[i]);
+        }
+
+        for(int i=0;i<n;i++){
+            printf("%d",arr[i]);
+        }
+
+
+        printf("enter the position where you insert the number");
+         int pos;
+        scanf("%d",&pos);
+
+        int num;
+        printf("what number you want to put at that index");
+        scanf("%d",&num);
+
+        for(int i=n-1; i>=pos-1; i--)
+        {
+            arr[i+1]=arr[i];
+        }
+        arr[pos-1]=num;
+        n++;
+
+
+        for(int i=0; i<n; i++)
+        {
+            printf("%d",arr[i]);
+        }
+    }
+}

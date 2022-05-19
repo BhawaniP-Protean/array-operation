@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+int arr[10];
+int Count=0;
+int Count_odd=0;
+cout<<"read the 10 values "<<endl;
+for(int i=0;i<10;i++){
+    cin>>arr[i];
+    cout<<" ";
+} cout<<endl;
+
+for(int i=0;i<10;i++){
+    if(arr[i]%2==0){
+        Count=Count+1;
+    }
+    else{
+        Count_odd=Count_odd+1;
+    }
+}
+
+cout<<"the even number is "<<Count<<endl;
+cout<<"the odd number is "<<Count_odd<<endl;
+}

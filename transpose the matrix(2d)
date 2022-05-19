@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"enter the value for n in 2d array arr[n][m]"<<endl;
+    int n;
+    cin>>n;
+    cout<<" enter the vcalue for m in 2d array arr[n][m]"<<endl;
+    int m;
+    cin>>m;
+    int sum=0;
+
+    int arr[n][m];
+    cout<<"read the 2d array for "<<"arr["<<n<<"]["<<m<<"]"<<endl;
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<m; j++)
+        {
+            cin>>arr[i][j];
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    
+    
+    cout<<"here is the values of arrays"<<endl;
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<m; j++)
+        {
+            cout<<arr[i][j];
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    
+    
+    cout<<"transpose of the matrix "<<endl;
+    for(int i=0; i<m; i++)
+    {
+        for(int j=0; j<n; j++)
+        {
+            cout<<arr[j][i];
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}

@@ -1,0 +1,39 @@
+// program to print sum of individual rows and columns       
+// this below program is run on 3*3 matrix
+
+#include<iostream>
+using namespace std;
+int main(){
+    int sum_row;int sum_column;
+    cout<<"enter the value of n for multi dimensional array arr[n][m]"<<endl;
+int n;
+cin>>n;
+cout<<"enter the value of n for multi dimensional array arr[n][m]"<<endl;
+int m;
+cin>>m;
+int arr[n][m];
+cout<<"ewnter the values for arr["<<n<<"]"<<"["<<m<<"]"<<endl;
+for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+        cin>>arr[i][j];
+        cout<<" ";
+    }
+}
+for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+            cout<<" ";
+        cout<<arr[i][j];
+
+    }
+    cout<<endl;
+}
+
+for(int i=0;i<n;i++){
+        sum_row=0;sum_column=0;
+    for(int j=0;j<m;j++){
+        sum_row=sum_row+arr[i][j];
+        sum_column=sum_column+arr[j][i];
+    }cout<<"sum for row"<<i<<"="<<sum_row<<" "<<endl;
+    cout<<"sum for column ="<<sum_column<<" "<<endl;
+}
+}

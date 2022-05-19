@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+int arr1[5];
+int arr2[5];
+int arr3[5];
+
+cout<<"enter the 5 values to the first array";
+for(int i=0;i<5;i++){
+    cin>>arr1[i];
+    cout<<" ";
+}
+cout<<" enter the 5 values to the second array";
+for(int i=0;i<5;i++){
+cin>>arr2[i];
+
+}
+cout<<"the two array sum ";
+for(int i=0;i<5;i++){
+    arr3[i]=arr1[i]+arr2[i];
+    cout<<arr3[i]<<" ";
+}}
